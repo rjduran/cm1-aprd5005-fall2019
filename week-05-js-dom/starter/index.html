@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>cm-javascripting</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background: #f1f1f1;
+        position: fixed;
+        height: 100%; /* makes it so the sidebar spans the entire window height */
+        overflow: auto; /* enables sidebar scrolling */
+      }
+      li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        padding: 8px 16px;
+      }
+      /* li a:hover {
+        background-color: #555555;
+        color: #FFFFFF;
+      } */
+      li a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+      li a:hover:not(.active){
+        background-color: #555;
+        color: white;
+      }
+      
+      #content {
+        margin-left:25%;
+        padding:16px;
+        height:1000px;
+      }
+
+      .red {
+        color: red;
+      }
+      .orange {
+        color: orange;
+      }
+      .yellow {
+        color: yellow;
+      }
+      .green {
+        color: green;
+      }
+      .blue {
+        color: blue;
+      }
+      .purple {
+        color: purple;
+      }      
+            
+    </style>
+  </head>
+  <body>
+    
+    <div id="sidebar">
+      <ul>
+        <li><a class="active" href="#about">About</a></li>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+    
+      <div id="about">
+        <h2>About</h2>
+        <p>Welcome to cm-javascripting! A playground for exploring the Javascript language. Open the Chrome Developer Tools > Console and play around!</p>
+      </div>
+    
+      <div id="section1">
+        <h2>Section 1</h2>
+        <p class="p1 first">Qistaquz is a town in north-western Tajikistan.[1] It is located in Sughd province. It is located near the country's largest lake on the A376 highway. More than 70,000 people live in the town. Beech Bluff is an unincorporated community in Madison County, Tennessee, United States.</p>
+        <p id="second" class="p2">Beech Bluff is built on deposits of loess which have developed brown or grayish brown silt loam soils. These are mapped as Grenada, Memphis or Lexington series where drainage is good, and Calloway in somewhat poorly drained areas.[3] A post office was established at Beech Bluff in 1852.</p>
+        <p id="change-me" class="p3">Mizhi Randilum (English: In both Eyes) is a 2003 Malayalam film written and directed by Ranjith, starring Dileep, Kavya Madhavan, Indrajith, Jagathy Sreekumar, Sukumari, and Revathi. This movie was actor Narendra Prasad's last film. Bhadra (Kavya Madhavan) is a nurse who is living with her widowed mother, grandmother and twin sister Bhama, a medical student.</p>
+        <p class="p4 empty-us">Meanwhile, Achuthankutty has troubles with a ruthless businessman and moneylender named Krishnakumar(Dileep) who forces Achuthankutty to sell the family house to him. Bhadra and Bhama are left to be taken care of by their sister-in-law. She meets Krishakumar's sister Sridevi who was paralyzed after the death of their parents.</p>
+        <p class="p5 last">At the ending we see Bhadra telling Krishnakumar that she is pregnant. The film's soundtrack contains 6 songs, all composed by Raveendran and Lyrics by Sarath Vayalar. All the songs are evergreen hits. Henri Louis Marie Alexandre Gauthier (19 September 1877 – 1950[1]) was a French Egyptologist and geographer.</p>          
+      </div>
+      <div id="section2">
+        <h2>Section 2</h2>
+        <p class="p1 first">Qistaquz is a town in north-western Tajikistan.[1] It is located in Sughd province. It is located near the country's largest lake on the A376 highway. More than 70,000 people live in the town. Beech Bluff is an unincorporated community in Madison County, Tennessee, United States.</p>
+        <p id="empty-me" class="p2">Beech Bluff is built on deposits of loess which have developed brown or grayish brown silt loam soils. These are mapped as Grenada, Memphis or Lexington series where drainage is good, and Calloway in somewhat poorly drained areas.[3] A post office was established at Beech Bluff in 1852.</p>
+        <p class="p3 empty-us">Mizhi Randilum (English: In both Eyes) is a 2003 Malayalam film written and directed by Ranjith, starring Dileep, Kavya Madhavan, Indrajith, Jagathy Sreekumar, Sukumari, and Revathi. This movie was actor Narendra Prasad's last film. Bhadra (Kavya Madhavan) is a nurse who is living with her widowed mother, grandmother and twin sister Bhama, a medical student.</p>
+        <p class="p4">Meanwhile, Achuthankutty has troubles with a ruthless businessman and moneylender named Krishnakumar(Dileep) who forces Achuthankutty to sell the family house to him. Bhadra and Bhama are left to be taken care of by their sister-in-law. She meets Krishakumar's sister Sridevi who was paralyzed after the death of their parents.</p>
+        <p class="p5 last">At the ending we see Bhadra telling Krishnakumar that she is pregnant. The film's soundtrack contains 6 songs, all composed by Raveendran and Lyrics by Sarath Vayalar. All the songs are evergreen hits. Henri Louis Marie Alexandre Gauthier (19 September 1877 – 1950[1]) was a French Egyptologist and geographer.</p>
+      </div>
+      <div id="section3">
+        <h2>Section 3</h2>
+        <p class="p1 first">Qistaquz is a town in north-western Tajikistan.[1] It is located in Sughd province. It is located near the country's largest lake on the A376 highway. More than 70,000 people live in the town. Beech Bluff is an unincorporated community in Madison County, Tennessee, United States.</p>
+        <p class="p2">Beech Bluff is built on deposits of loess which have developed brown or grayish brown silt loam soils. These are mapped as Grenada, Memphis or Lexington series where drainage is good, and Calloway in somewhat poorly drained areas.[3] A post office was established at Beech Bluff in 1852.</p>
+        <p class="p3 empty-us">Mizhi Randilum (English: In both Eyes) is a 2003 Malayalam film written and directed by Ranjith, starring Dileep, Kavya Madhavan, Indrajith, Jagathy Sreekumar, Sukumari, and Revathi. This movie was actor Narendra Prasad's last film. Bhadra (Kavya Madhavan) is a nurse who is living with her widowed mother, grandmother and twin sister Bhama, a medical student.</p>
+        <p class="p4">Meanwhile, Achuthankutty has troubles with a ruthless businessman and moneylender named Krishnakumar(Dileep) who forces Achuthankutty to sell the family house to him. Bhadra and Bhama are left to be taken care of by their sister-in-law. She meets Krishakumar's sister Sridevi who was paralyzed after the death of their parents.</p>
+        <p class="p5 last">At the ending we see Bhadra telling Krishnakumar that she is pregnant. The film's soundtrack contains 6 songs, all composed by Raveendran and Lyrics by Sarath Vayalar. All the songs are evergreen hits. Henri Louis Marie Alexandre Gauthier (19 September 1877 – 1950[1]) was a French Egyptologist and geographer.</p>
+      </div>
+      <div id="footer">
+        Text brought to you by <a href="http://www.wikipsum.com/">Wikipsum</a>. Ipsum that makes sense.
+      </div>
+                
+    </div>
+
+    <script>
+        console.log("begin script");
+
+        // Insert your code here
+                        
+        console.log("end script");
+      </script>
+
+  </body>
+</html>

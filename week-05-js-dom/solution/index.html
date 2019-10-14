@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>cm-javascripting</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background: #f1f1f1;
+        position: fixed;
+        height: 100%; /* makes it so the sidebar spans the entire window height */
+        overflow: auto; /* enables sidebar scrolling */
+      }
+      li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        padding: 8px 16px;
+      }
+      /* li a:hover {
+        background-color: #555555;
+        color: #FFFFFF;
+      } */
+      li a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+      li a:hover:not(.active){
+        background-color: #555;
+        color: white;
+      }
+      
+      #content {
+        margin-left:25%;
+        padding:16px;
+        height:1000px;
+      }
+
+      .red {
+        color: red;
+      }
+      .orange {
+        color: orange;
+      }
+      .yellow {
+        color: yellow;
+      }
+      .green {
+        color: green;
+      }
+      .blue {
+        color: blue;
+      }
+      .purple {
+        color: purple;
+      }      
+            
+    </style>
+  </head>
+  <body>
+    
+    <div id="sidebar">
+      <ul>
+        <li><a class="active" href="#about">About</a></li>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+    
+      <div id="about">
+        <h2>About</h2>
+        <p>Welcome to cm-javascripting! A playground for exploring the Javascript language.</p>
+      </div>
+    
+      <div id="section1">
+        <h2>Section 1</h2>
+        <p class="p1 first">Qistaquz is a town in north-western Tajikistan.[1] It is located in Sughd province. It is located near the country's largest lake on the A376 highway. More than 70,000 people live in the town. Beech Bluff is an unincorporated community in Madison County, Tennessee, United States.</p>
+        <p id="second" class="p2">Beech Bluff is built on deposits of loess which have developed brown or grayish brown silt loam soils. These are mapped as Grenada, Memphis or Lexington series where drainage is good, and Calloway in somewhat poorly drained areas.[3] A post office was established at Beech Bluff in 1852.</p>
+        <p id="change-me" class="p3">Mizhi Randilum (English: In both Eyes) is a 2003 Malayalam film written and directed by Ranjith, starring Dileep, Kavya Madhavan, Indrajith, Jagathy Sreekumar, Sukumari, and Revathi. This movie was actor Narendra Prasad's last film. Bhadra (Kavya Madhavan) is a nurse who is living with her widowed mother, grandmother and twin sister Bhama, a medical student.</p>
+        <p class="p4 empty-us">Meanwhile, Achuthankutty has troubles with a ruthless businessman and moneylender named Krishnakumar(Dileep) who forces Achuthankutty to sell the family house to him. Bhadra and Bhama are left to be taken care of by their sister-in-law. She meets Krishakumar's sister Sridevi who was paralyzed after the death of their parents.</p>
+        <p class="p5 last">At the ending we see Bhadra telling Krishnakumar that she is pregnant. The film's soundtrack contains 6 songs, all composed by Raveendran and Lyrics by Sarath Vayalar. All the songs are evergreen hits. Henri Louis Marie Alexandre Gauthier (19 September 1877 – 1950[1]) was a French Egyptologist and geographer.</p>          
+      </div>
+      <div id="section2">
+        <h2>Section 2</h2>
+        <p class="p1 first">Qistaquz is a town in north-western Tajikistan.[1] It is located in Sughd province. It is located near the country's largest lake on the A376 highway. More than 70,000 people live in the town. Beech Bluff is an unincorporated community in Madison County, Tennessee, United States.</p>
+        <p id="empty-me" class="p2">Beech Bluff is built on deposits of loess which have developed brown or grayish brown silt loam soils. These are mapped as Grenada, Memphis or Lexington series where drainage is good, and Calloway in somewhat poorly drained areas.[3] A post office was established at Beech Bluff in 1852.</p>
+        <p class="p3 empty-us">Mizhi Randilum (English: In both Eyes) is a 2003 Malayalam film written and directed by Ranjith, starring Dileep, Kavya Madhavan, Indrajith, Jagathy Sreekumar, Sukumari, and Revathi. This movie was actor Narendra Prasad's last film. Bhadra (Kavya Madhavan) is a nurse who is living with her widowed mother, grandmother and twin sister Bhama, a medical student.</p>
+        <p class="p4">Meanwhile, Achuthankutty has troubles with a ruthless businessman and moneylender named Krishnakumar(Dileep) who forces Achuthankutty to sell the family house to him. Bhadra and Bhama are left to be taken care of by their sister-in-law. She meets Krishakumar's sister Sridevi who was paralyzed after the death of their parents.</p>
+        <p class="p5 last">At the ending we see Bhadra telling Krishnakumar that she is pregnant. The film's soundtrack contains 6 songs, all composed by Raveendran and Lyrics by Sarath Vayalar. All the songs are evergreen hits. Henri Louis Marie Alexandre Gauthier (19 September 1877 – 1950[1]) was a French Egyptologist and geographer.</p>
+      </div>
+      <div id="section3">
+        <h2>Section 3</h2>
+        <p class="p1 first">Qistaquz is a town in north-western Tajikistan.[1] It is located in Sughd province. It is located near the country's largest lake on the A376 highway. More than 70,000 people live in the town. Beech Bluff is an unincorporated community in Madison County, Tennessee, United States.</p>
+        <p class="p2">Beech Bluff is built on deposits of loess which have developed brown or grayish brown silt loam soils. These are mapped as Grenada, Memphis or Lexington series where drainage is good, and Calloway in somewhat poorly drained areas.[3] A post office was established at Beech Bluff in 1852.</p>
+        <p class="p3 empty-us">Mizhi Randilum (English: In both Eyes) is a 2003 Malayalam film written and directed by Ranjith, starring Dileep, Kavya Madhavan, Indrajith, Jagathy Sreekumar, Sukumari, and Revathi. This movie was actor Narendra Prasad's last film. Bhadra (Kavya Madhavan) is a nurse who is living with her widowed mother, grandmother and twin sister Bhama, a medical student.</p>
+        <p class="p4">Meanwhile, Achuthankutty has troubles with a ruthless businessman and moneylender named Krishnakumar(Dileep) who forces Achuthankutty to sell the family house to him. Bhadra and Bhama are left to be taken care of by their sister-in-law. She meets Krishakumar's sister Sridevi who was paralyzed after the death of their parents.</p>
+        <p class="p5 last">At the ending we see Bhadra telling Krishnakumar that she is pregnant. The film's soundtrack contains 6 songs, all composed by Raveendran and Lyrics by Sarath Vayalar. All the songs are evergreen hits. Henri Louis Marie Alexandre Gauthier (19 September 1877 – 1950[1]) was a French Egyptologist and geographer.</p>
+      </div>
+                
+    </div>
+
+    <script>
+        console.log("begin script");
+
+        // Insert your code here
+        
+        // Solution
+        
+        // Getting Elements
+
+        // #1
+        // Get a reference to an element by Id
+        var ref = document.getElementById("sidebar");
+        console.log(ref);
+
+        // #2
+        // Get a reference to a set of elements by class
+        var ref = document.getElementsByClassName("p1");
+        console.log(ref);
+
+        // #3
+        // Get a reference to a set of elements by tag name
+        var ref = document.getElementsByTagName("h2");
+        console.log(ref);
+        
+        // #4
+        // Get a reference to a set of elements by class
+        var ref = document.getElementsByClassName("first");
+        console.log(ref);
+
+        // #5
+        // Get a reference to all the list items in the sidebar and print the contents of the last one to the console.
+        var ref = document.getElementById("sidebar").getElementsByTagName("li");
+        console.log(ref[3].innerText);
+        
+        
+        // Changing Elements
+
+        // #1
+        // Change the text within the previously selected list item (li) to "Greetings List Item! I'm a string from another planet!".
+        var message = "Greetings List Item! I'm a string from another planet!";
+        ref[3].innerHTML = message;
+
+        // #2
+        // Change the text of a specific paragraph to a different string of text. Use an Ipsum generator tool to create new placeholder text that you insert using Javascript.
+        var ref = document.getElementById("change-me");
+        ref.innerText = "Alive. Something about us. On/off alive, the brainwasher doin' it right get lucky. The game of love discovery technologic, contact. Burnin'. Technologic. Within. Giorgio by moroder WDPK 83.7 FM too long. High fidelity homework. Veridis quo give life back to music veridis quo, indo silver club something about us, fresh.";
+        // change text color to red
+        ref.style.color = "red";
+
+        
+        // Removing Elements
+
+        // #1
+        // Clear the contents of the paragraph with an id of "empty-me".
+        var ref = document.getElementById("empty-me");
+        ref.innerHTML = "";
+
+        // #2
+        // Clear the contents of the set of paragraphs with class "empty-us".
+        var ref = document.getElementsByClassName("empty-us");
+        console.log("number elements with class 'empty-us': " + ref.length);
+        console.log(ref); // print out all the objects in the array
+        // loop through all the objects and clear their contents. Look in the Chrome inspector to see the contents cleared
+        for(var i = 0; i < ref.length; i++){
+          ref[i].innerText = "";
+        }
+        
+        // #3
+        // Remove the div with a specific id of "section3".
+        var ref = document.getElementById("section3");
+        ref.remove(); // bye bye section 3 div
+
+
+        // Adding Elements
+
+        // #1
+        // Create a new anchor tag that links to your blog and insert it just after the paragraph tag in the div with an id of "about".
+        // Hint: Look at https://www.w3schools.com/jsref/met_node_appendchild.asp
+        // Get reference to div about
+        // Append new anchor tag to div (just after paragraph)
+        // Goal: Create a link that looks like this: <a href="http:"//www.google.com">My Blog</a>
+        var ref = document.getElementById("about");
+        var newAnchor = document.createElement("a"); 
+        newAnchor.setAttribute('href', 'http://www.google.com'); // set the href attribute
+        var linkText = document.createTextNode("My Blog");  // insert the link text into the anchor element
+        newAnchor.appendChild(linkText);                
+        ref.appendChild(newAnchor); // insert the anchor element into the div just after the paragraph element
+        
+        // #2
+        // Append a new div anywhere in the document and give it an id of your choice. Insert a paragraph with some content into the div using javascript.
+        // Get reference to content (parent element) in order to add section3 back to the document. Remember we removed it previously. 
+        var ref = document.getElementById("content");
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute('id', 'section3');
+        // add H2 tag to div
+        var newH2 = document.createElement("h2");
+        var newH2Text = document.createTextNode("Section 3 is Back!");
+        newH2.appendChild(newH2Text);
+        newDiv.appendChild(newH2);
+        // add paragraph tag to div
+        var newParagraph = document.createElement("p");
+        var newText = document.createTextNode("Lorizzle ipsizzle rizzle sizzle black, consectetuer adipiscing elit. Nullizzle sapien velizzle, check out this volutpizzle, suscipizzle quizzle, mofo vizzle, arcu. Doggy egizzle tortor. Doggy eros. Away izzle dolizzle dapibus turpis tempizzle tempizzle.");
+        newParagraph.appendChild(newText);
+        newDiv.appendChild(newParagraph);
+        
+        // add div to content
+        ref.appendChild(newDiv);
+
+        // #3
+        // Add a new list item to the sidebar ul that links to your new div so you can click and scroll to it.
+        // get reference to parent of sidebar list
+        var ref = document.getElementById("sidebar").getElementsByTagName("ul");                
+        // console.log("before:");
+        // console.log(ref[0].children);
+        var item = document.createElement("li");
+        var itemAnchor = document.createElement("a");
+        var itemText = document.createTextNode("Section 3 Yay!");
+        itemAnchor.setAttribute('href', '#section3');
+        itemAnchor.appendChild(itemText);
+        item.appendChild(itemAnchor);
+        ref[0].appendChild(item);
+        // console.log("after:");
+        // console.log(ref[0].children);
+
+
+        // Event Listener
+        
+        // #1
+        // Make an event listener for any h2 element that triggers an alert() when you click it. Set the alert message to "Hey Hey Hey!".
+        var ref = document.getElementsByTagName("h2");
+        // add an event listener to each h2 element
+        for(var i = 0; i < ref.length; i++) {
+          ref[i].addEventListener("click", function(){
+            alert("Hey Hey Hey!");
+          }, {once: true}); // add options to remove listener after running once. Ref: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+        }
+        
+        // #2
+        // Make an event listener that triggers a change in the text of a specific paragraph with the id "change-me".
+
+        // Click to change the text within the the first paragraph element with class="first".
+        var ref = document.getElementsByClassName("first");
+        ref[0].addEventListener("click", function(){
+          this.innerHTML = "Hello World! on click";
+          console.log("changed some text. yay!");
+        });                        
+        
+        
+        console.log("end script");
+      </script>
+
+  </body>
+</html>
